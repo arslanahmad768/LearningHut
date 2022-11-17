@@ -1,0 +1,66 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #222222;
+    height: 60px;
+    width: 100%;
+    float: left;
+}
+header div a img{
+    margin-left: 10px;
+    float: left;
+}
+header>a{
+    text-decoration: none;
+    color: black;
+    margin-top: 12px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+}
+.node-content{
+    width: 100%;
+    float: left;
+    /* margin-top: 20px; */
+}
+#head{
+    margin: 0px;
+    background-color:rgb(239, 240, 241);
+    padding:0px 10px;
+    height: 60px;
+}
+#head h2{
+    font-size: 18px;
+    display:inline;
+    margin-top: 5px;
+}
+#head a{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: turquoise;
+    color: white;
+    cursor: pointer;
+    margin-left: 800px;
+}
+#Q-body{
+    margin-top: 0px;
+    height: 150px;
+    border: 2px solid rgb(233, 229, 223);
+    width: 100%;
+}
+footer{
+    height: 30px;
+    color: wheat;
+    background-color: black;
+    width: 100%;
+    margin-top: 1000px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}

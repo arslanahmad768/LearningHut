@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #222222;
+    height: 60px;
+    width: 100%;
+    float: left;
+}
+header div a img{
+    margin-left: 10px;
+    float: left;
+}
+header>a{
+    text-decoration: none;
+    color: black;
+    margin-top: 12px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+}
+
+.not-found-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    float: left;
+}
+.not-found-content h1{
+    font-size: 40px;
+}
+.not-found-content p{
+    font-size: 18px;
+}
+.not-found-content a{
+    margin-top: 5px;
+    background:midnightblue;
+    /*float: left;*/
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 30px;
+}
+footer{
+    color: rgb(106, 115, 124);
+    background:black;
+    width:100%;
+    float:right;
+    margin-top: 60px;
+    float: left;
+    height: 150px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+footer>div{
+    margin-left: 50px;
+    float: left;
+    width: 350px;
+    padding: 10px;
+}
+div>ul>li{
+    list-style: none;
+    line-height:25px;
+}
+div ul li a{
+    text-decoration: none;
+    color: rgb(106, 115, 124);
+    font-size: 16px;
+}
+div nav a{
+    text-decoration: none;
+    color: rgb(106, 115, 124);
+    font-size: 16px;
+}

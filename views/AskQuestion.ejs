@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./partials/head.ejs') %>
+<body>
+    <%-include('./partials/header2.ejs') %>
+    <link href="AskQuestion.css" rel="stylesheet" >
+    <div class="main-div">
+        <h3>Ask a public Question</h3>
+        <div id="Q-form">
+            <form action="/new" method="POST" >
+                <label for="title"><h4>Title </h4>
+                <p>Be specific and imagine you’re asking a question to another person</p></label>
+                <input type="text" name="title" id="title" required  value="arslan" placeholder="e.g Type casting error in pointer in C....">
+                
+                <label for="textarea"><h4>Body</h4>
+                <p>Include all the information someone would need to answer your question</p></label>
+                <textarea   rows="15" cols="135" name="description" required id="description"></textarea>
+                
+                <button class="button">Upload</button>
+            </form>
+            <script>
+                CKEDITOR.replace( 'description' );
+            </script>
+        </div>
+    </div>
+    <%-include('./partials/footer.ejs') %>
+</body>
+</html>

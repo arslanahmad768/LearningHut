@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./partials/head.ejs') %>
+<body>
+<!-- Header section--->
+    <%-include('./partials/header.ejs') %>
+    <div class="form1">
+        <div class="form1-content">
+            <div class="close-btn1">+</div>
+            <img src="images/login.png" id="login-img" alt="">
+            <form action="/login" method="POST">
+                <input type="text" name="username" id="username" class="login-input" placeholder="Username">
+                <input type="text" name="password" id="username" class="login-input" placeholder="Password">
+                <button  class="login-submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="form2">
+        <div class="form2-content">
+            <div class="close-btn2">+</div>
+            <img src="images/login.png" id="login-img" alt="">
+            <form action="/signup" method="POST">
+                <input type="text" name="name" id="" class="login-input-s" placeholder="Name" required>
+                <input type="text" name="username" id="" class="login-input-s" placeholder="Username" required>
+                <input type="email" name="email" id="" class="login-input-s" placeholder="Email" required>
+                <input type="password" name="password" id="pass" class="login-input-s" min="8" max="12" placeholder="Password" required>
+                <input type="password" name="re-password" id="cPass" class="login-input-s" min="8" max="12" placeholder="Retype password" required>
+                <button  class="signup-submit-button" type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+   <link href="index.css" rel="stylesheet">
+    <!-- Main content ------->
+<article class="article">
+    <h1> For developers ,By developers</h1>
+    <p>
+        Stack Overflow is an <b style="color:sandybrown">open community</b> for anyone that codes .We help you get
+        answers to your toughest coding questions, share knowledge with your coworkers in private, and find your best solution.
+    </p>
+</article>
+<div class="container">
+    <div class="browse-question">
+        <img src="images/public.PNG">
+        <h4>Public Q&A</h4>
+        <p>Get answers to more than 16.5 million questions and give back by sharing your knowledge with others.
+        <a href="#7">sign up</a> for an account.</p>
+       <center> <a href="/Question">Browse Question</a></center>
+    </div>
+    <div class="browse-question" style="margin-top: 0px">
+        <img src="images/private.PNG">
+        <h4>private Q&A</h4>
+        <p>Level up with LearningHut while you work. Share knowledge privately with your coworkers using our
+            flagship Q&A engine.</p>
+        <center><a href="#" style="background-color: green">Private Q&A</a></center>
+
+    </div>
+    <div class="browse-question">
+        <img src="images/news.PNG">
+        <h4>Browse news</h4>
+        <p>Find the right job through high quality listings and search for roles based on title, technology stack
+            , salary, location, and more.</p>
+        <center><a href="#">Find News</a></center>
+    </div>
+
+</div>
+<article class="article">
+    <h1>For businesses, by developers</h1>
+    <p>Our mission is to help developers write the script of the future. This means helping you find and hire skilled
+        developers for your business and
+        providing them the tools they need to share knowledge and work effectively.
+    </p>
+</article>
+
+    <section class="section">
+        <img src="images/private%20Q&A.PNG" width="80px" height="80px">
+        <p>Quickly find and share internal knowledge with
+        <a href="#">Private Q&A </a></p>
+    </section>
+    <section class="section">
+        <img src="images/find%20candiate.PNG" width="80px" height="80px">
+        <p>Find the perfect candidate for your growing technical team with  <a href="#">Perfect solution</a></p>
+    </section>
+    <section class="section">
+        <img src="images/discover.PNG" width="80px" height="80px">
+        <p>Accelerate the discovery of your products or services through our <a href="#">technical magzines</a></p>
+    </section>
+
+    <div id="main">
+        <h4>Questions are everywhere, answers are on Stack LearningHut</h4>
+        <div class="detail">
+            <div class="discover">
+                <img src="images/ask%20a%20question.PNG" width="50px" height="50px">
+                <p>Ask a Question</p>
+            </div>
+            <div class="discover">
+                <img src="images/vote.PNG" width="50px" height="50px">
+                <p>Vote on Everything</p>
+            </div>
+            <div class="discover">
+                <img src="images/answer%20a%20question.PNG" height="50px" width="50px">
+                <p>Answer a Question</p>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="discover">
+                <img src="images/tag.PNG" width="50px" height="50px">
+                <p>Tag your Question</p>
+            </div>
+            <div class="discover">
+                <img src="images/accept%20an%20answer.PNG" width="50px" height="50px">
+                <p>Accept an Answer</p>
+            </div>
+            <div class="discover">
+                <img src="images/recognized.PNG" width="50px" height="50px">
+                <p>Get recognized</p>
+            </div>
+        </div>
+        <br>
+        <a href="#" id="signup-button" >Create an Account</a>
+    </div>
+        <br/>
+    <div id="feature">
+        <h3>Learn and grow with Stack Overflow</h3>
+        <div class="description">
+            <img src="images/deveolper.PNG" width="120px" height="120px">
+            <h4>Write the script of the feature</h4>
+            <p>Get your coding questions answered to learn, build, a
+                nd level up whether you’re beginning with JavaScript or a React professional.</p>
+        </div>
+        <div class="description">
+            <img src="images/open%20source.PNG" width=120px" height="120px">
+            <h4>Support Open source</h4>
+            <p>Reach users of your project by following tags, answering newcomer questions, and empowering
+                experts in the community. Read the curl project creator’s story.</p>
+
+        </div>
+        <div class="description">
+            <img src="images/knowledge.PNG" height="120px" width="120px">
+            <h4>Acquire and share knowledge</h4>
+            <p>Answer questions and gain insights from an audience of
+                developers using your technology on Stack Overflow.</p>
+        </div>
+        <di class="description">
+            <img src="images/carrier%20oppurtunity.PNG" width="120" height="120px">
+            <h4>Find career opportunities</h4>
+            <p>Create a profile that shows off your expertise and credentials to
+                help you make your next move. Start your Developer Story.</p>
+
+        </di>
+    </div>
+<%-include('./partials/footer.ejs')%>
+<script src="popUp.js"></script>
+</body>
+</html>

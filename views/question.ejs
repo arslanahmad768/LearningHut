@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./partials/head.ejs') %>
+<body>
+    <link href="question.css" rel="stylesheet">
+    <%-include('./partials/header2.ejs') %>
+    <div class="node-content">
+        <div id="head">
+            <h2>All Questions</h2>
+            <a href="/askQuestion">Ask a Question</a>
+        </div>
+            <%if(topics.length >0) {%>
+                <%topics.forEach((topic)=>{%>
+                <!-- <a href="/node/<%=topic._id%>">-->
+                <div id="Q-body">
+                    <h3><%= topic.title%></h3>    
+                    <p><%= topic.description%></p>
+                    <%});%>
+                </div>
+                    <%}else{%>
+                    <h4>No Question Created Yet</h4>
+                    <%}%>
+    </div>
+  <!-- <footer>&copy; Copyright 2021 </footer> -->
+</body>
+</html>
